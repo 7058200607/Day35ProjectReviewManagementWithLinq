@@ -35,5 +35,15 @@ namespace Day35ProjectReviewManagementWithLinq
                 Console.WriteLine(list.ProductId + "----" + list.Count);
             }
         }
+        public void RetriveProductIDAndRview(List<ProductReviews> listProductReviews) 
+        {
+            var recordedData = from ProductReviews in listProductReviews select new { ProductReviews.ProductId, ProductReviews.Review };
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("ProductId:-" + list.ProductId, "Review:-" + list.Review);
+            }
+
+
+            }
     }
 }
