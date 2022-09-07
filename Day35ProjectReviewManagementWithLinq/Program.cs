@@ -30,10 +30,13 @@ namespace Day35ProjectReviewManagementWithLinq
                 new ProductReviews(){ProductId=16,UserId=10,Rating=4,Review="nice",isLike=true},
 
             };
-            foreach (var list in listProductReviews)
+            /*foreach (var list in listProductReviews)
             {
                 Console.WriteLine("ProductId:-" + list.ProductId + " " + "UserId:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + "isLike:-" + list.isLike);
             }
+            */
+            Management management = new Management();
+            management.TopRecords(listProductReviews);
         }
     }
 }
