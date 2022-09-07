@@ -36,7 +36,11 @@ namespace Day35ProjectReviewManagementWithLinq
             }
             */
             Management management = new Management();
-            management.TopRecords(listProductReviews);
+           //UC2
+           // management.TopRecords(listProductReviews);
+
+            //UC3
+            management.SelectRecords(listProductReviews);
         }
     }
 }
