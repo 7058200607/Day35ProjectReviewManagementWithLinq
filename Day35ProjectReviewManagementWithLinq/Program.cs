@@ -45,8 +45,9 @@ namespace Day35ProjectReviewManagementWithLinq
             //UC4
            // management.RetriveCountOfRecords(listProductReviews);
             //UC5
-            management.RetriveProductIDAndRview(listProductReviews);
-
+            //management.RetriveProductIDAndRview(listProductReviews);
+            //UC6
+            management.SkipTopRecords(listProductReviews);
         }
     }
 }

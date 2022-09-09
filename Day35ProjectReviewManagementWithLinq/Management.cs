@@ -44,6 +44,15 @@ namespace Day35ProjectReviewManagementWithLinq
             }
 
 
+        }
+        public void SkipTopRecords(List<ProductReviews> listProductReviews) 
+        {
+            var recordedData = (from ProductReviews in listProductReviews select ProductReviews).Skip(5);
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("ProductId:-" + list.ProductId + " " + "UserId:-" + list.UserId + " " + "Rating:-" + list.Rating + " " + "Review:-" + list.Review + "isLike:-" + list.isLike);
             }
+
+        }
     }
 }
